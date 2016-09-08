@@ -1,0 +1,184 @@
+html {
+	font-size: 100px;
+}
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+}
+
+.container {
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	background: #eeeeee;
+	min-height: 500px;
+}
+
+h2 {
+	font-size: .48rem;
+	padding-top: .36rem;
+	color: #505050;
+	font-weight: 600;
+}
+
+h3 {
+	font-size: .36rem;
+	margin-top: .16rem;
+	font-weight: 400;
+	color: #505050;
+}
+
+.item {
+	margin: .11rem auto;
+	width: 87%;
+	height: 2.05rem;
+	text-align: left;
+	display: none;
+}
+
+.pointOutWord {
+	text-align: left;
+	width: 87%;
+	margin: 0.3rem auto .1rem;
+}
+
+.pointOutWord,
+.item .identify_code_send,
+li .submit {
+	color: #ff6600;
+	font-size: .28rem;
+}
+
+.identify_code_resend {
+	display: none;
+}
+
+.item p {
+	display: none;
+}
+
+.item .mistake_identify_code {
+	margin-bottom: 0.02rem;
+}
+
+.item ul {
+	background: #dcdcdc;
+}
+
+.item li {
+	position: relative;
+	font-size: .28rem;
+	background: white;
+	height: 1.1rem;
+	margin-top: 1px;
+	line-height: 1.1rem;
+	padding-left: .24rem;
+}
+
+.item li input {
+	height: 100%;
+	position: absolute;
+	left: 25%;
+	width: 60%;
+	border: 0;
+}
+
+.item .identify_code_box {
+	position: absolute;
+	width: 1.8rem;
+	text-align: center;
+	line-height: 1rem;
+	z-index: 10;
+	right: .1rem;
+	margin-top: -1.1rem;
+}
+
+.identify_code_resend {
+	color: #aaaaaa;
+	line-height: 1rem;
+	width: 2.5rem;
+	margin-left: -0.3rem;
+}
+
+.item li:nth-child(3) {
+	text-align: center;
+	padding: 0;
+}
+
+.item li .submit {
+	font-size: .32rem;
+	border: 0;
+	background: rgba(0, 0, 0, 0);
+	font-weight: 600;
+}
+
+.forget_password {
+	color: #aaaaaa;
+	height: 1rem;
+	font-size: .28rem;
+}
+
+.login #forget_password {
+	float: right;
+}
+
+.login .forget_password span {
+	display: inline-block;
+	height: 100%;
+	width: 2rem;
+	box-sizing: border-box;
+	padding-top: 0.3rem;
+}
+
+.login .forget_password span:first-child {
+	margin-top: -3px;
+}
+
+.login .forget_password span:nth-child(2) {
+	text-align: right;
+}
+
+.login .forget_password span .remember_pwd {
+	position: relative;
+	top: 1px;
+	background: #eee;
+	width: 14px;
+	height: 14px;
+}
+
+.new_password li:nth-child(3) {
+	padding: 0;
+	text-align: left;
+	color: #8c8c8c;
+}
+
+.new_password li:nth-child(4) {
+	text-align: center;
+	font-size: .32rem;
+	padding: 0;
+}
+
+.new_password li input {
+	left: 5%;
+	width: 95%;
+}
+
+.new_password li .prompt {
+	width: 100%;
+	height: 100%;
+	background: #eee;
+}
+
+.footer {
+	margin-top: -1rem;
+	width: 100%;
+	text-align: center;
+	font-size: .30rem;
+	color: #8c8c8c;
+}
+
+.active {
+	display: block;
+}

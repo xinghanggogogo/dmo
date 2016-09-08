@@ -1,0 +1,698 @@
+/* css reset */
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td { margin: 0; padding: 0; }
+body, button, input, select, textarea, h1, h2, h3, h4, h5, h6 { font: 12px/1.5 "Microsoft Yahei", Verdana, "宋体", sans-serif; }
+code, kbd, pre, samp { font-family: monaco, 'courier new', 'bitstream vera sans mono', courier, monospace; }
+small { font-size: 12px; }
+ul, ol { list-style: none; }
+fieldset, img { border: 0; }
+img { vertical-align: middle; }
+button, input, select, textarea { font-size: 100%; }
+table { border-spacing: 0; }
+textarea { resize: vertical; }
+
+.cf:before, .cf:after { content:""; display:block; }
+.cf:after { clear:both; }
+.cf { *zoom:1; }
+
+html {
+    _background: url('about:blank') no-repeat fixed;
+}
+
+html, body, #container {
+    height: 100%;
+    background-color: #fcfcfc;
+}
+
+a {
+    text-decoration: none;
+}
+
+.center {
+    text-align: center;
+}
+
+.fl {
+    float: left;
+}
+
+.b {
+    font-weight: 700;
+}
+
+.w250 {
+    width: 250px;
+    display: inline-block;
+}
+
+.w150 {
+    width: 150px;
+    display: inline-block;
+}
+
+.yellow {
+    color: #d24114;
+}
+
+.f12 {
+    font-size: 12px;
+}
+
+.f14 {
+    font-size: 14px;
+}
+
+input.btn {
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    background-color: #d24114;
+    background: -webkit-gradient(linear, left top, left bottom, from(#F25E30), to(#D24114));
+    background: -moz-gradient(linear, left top, left bottom, from(#F25E30), to(#D24114));
+    background: gradient(linear, left top, left bottom, from(#F25E30), to(#D24114));
+    border: none;
+    padding: 6px 0;
+    cursor: pointer;
+    color: #fff;
+    width: 100px;
+    text-align: center;
+}
+
+/* top-header */
+#top-header {
+    background-color: #fff;
+}
+
+#top-header p {
+    float: right;
+    margin: 15px 20px 0 0;
+}
+
+#top-header .logo {
+    width: 150px;
+    margin-left: 10px;
+}
+
+#top-header .refresh {
+    color: #d24114;
+    font-size: 15px;
+}
+
+#top-header li {
+    float: left;
+    font-weight: 800;
+    text-align: center;
+    padding: 18px 30px;
+    font-size: 17px;
+}
+
+#top-header li a {
+    color: #000;
+}
+
+#top-header li.active {
+    background-color: #000;
+}
+
+#top-header li.active a {
+    color: #fff;
+}
+
+/* menu */
+ul.menu {
+    width: 100%;
+    background-color: #d24114;
+    background: -webkit-gradient(linear, left top, left bottom, from(#F25E30), to(#D24114));
+    background: -moz-gradient(linear, left top, left bottom, from(#F25E30), to(#D24114));
+    background: gradient(linear, left top, left bottom, from(#F25E30), to(#D24114));
+}
+
+ul.menu li {
+    float: left;
+}
+
+ul.menu li a {
+    border-right: 1px solid #fff;
+    margin: 8px 0;
+    display: inline-block;
+    text-align: center;
+    padding: 6px 43px;
+    font-size: 18px;
+    color: #fff;
+}
+
+ul.menu li:last-child a {
+    border-right: none;
+}
+
+ul.menu li.active a:after {
+    content: '';
+    display: block;
+    width: 72px;
+    height: 1px;
+    background-color: #fff;
+}
+
+/* container */
+#left-container {
+    float: left;
+    width: 83%;
+}
+
+#left-container .table {
+    overflow: auto;
+}
+
+#right-container {
+    float: left;
+    width: 17%;
+    height: 100%;
+    background-color: #eee;
+}
+
+#right-container form {
+    margin: 20px 0 0 20px;
+}
+
+#right-container form input.btn {
+    margin-top: 20px;
+}
+
+#right-container form input.text {
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    width: 150px;
+}
+
+#right-container form li span {
+    display: block;
+}
+
+#right-container form li.pos {
+    margin-top: 5px;
+}
+
+#right-container form select {
+    width: 150px;
+}
+
+#right-container form option {
+    padding: 5px 0;
+}
+
+table th {
+    background-color: #707070;
+    font-size: 13px;
+    color: #fff;
+}
+
+table th.index {
+    width: 1%;
+}
+
+table tbody tr:hover{
+    background-color: #cfcfcf;
+}
+
+table th, table td {
+    border: none;
+    white-space: nowrap;
+    text-align: center;
+    padding: 4px 8px;
+}
+
+table tbody tr {
+    background-color: #fff;
+    height: 30px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* page-mod */
+.page-mod {
+    clear: both;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.page-mod .on {
+    color: #fff;
+    background: #f25e30;
+    border: 1px solid #f25e30;
+    cursor: pointer;
+    width: 22px;
+    text-align: center;
+    line-height: 23px;
+    display: inline-block;
+}
+
+.page-mod a {
+    margin: 0 5px;
+    width: 22px;
+    text-align: center;
+    border: 1px solid #999;
+    cursor: pointer;
+    line-height: 23px;
+    color: #999;
+    display: inline-block;
+}
+
+/* deposit */
+.deposit {
+    margin: 20px 40px;
+}
+
+.deposit dl {
+    border: 1px solid #dcdcdc;
+    width: 270px;
+    height: 160px;
+    float: left;
+    margin-right: 10px;
+    cursor: pointer;
+    font-style: italic;
+}
+
+.deposit dl.active {
+    border: 1px solid #ff8533;
+}
+
+.deposit dl dt {
+    color: #fff;
+    font-size: 15px;
+    text-align: right;
+    padding-right: 15px;
+    margin-bottom: 15px;
+    line-height: 41px;
+    height: 41px;
+    background-color: #c8c8c8;
+    background: -webkit-gradient(linear, left top, left bottom, from(#dcdcdc), to(#c8c8c8));
+    background: -moz-gradient(linear, left top, left bottom, from(#dcdcdc), to(#c8c8c8));
+    background: gradient(linear, left top, left bottom, from(#dcdcdc), to(#c8c8c8));
+}
+
+.deposit dl.active dt {
+    background-color: #f76b33;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ff8533), to(#f76b33));
+    background: -moz-gradient(linear, left top, left bottom, from(#ff8533), to(#f76b33));
+    background: gradient(linear, left top, left bottom, from(#ff8533), to(#f76b33));
+}
+
+.deposit dl dd {
+    padding-left: 20px;
+    margin-bottom: 5px;
+    color: #7b7b7b;
+}
+
+.deposit dl.active dd {
+    color: #3a3a3a;
+}
+
+.deposit dl em {
+    margin-right: 15px;
+}
+
+.deposit dl input {
+    padding-left: 5px;
+    font-style: italic;
+}
+
+.deposit .add-card {
+    width: 270px;
+    height: 160px;
+    border: 1px dashed #c9c9c9;
+    display: inline-block;
+    color: #c8c8c8;
+    font-size: 15px;
+    text-align: center;
+    line-height: 160px;
+}
+
+.deposit .save-tip {
+    margin: 10px 0 0 115px;
+}
+
+.deposit li {
+    margin-bottom: 20px;
+}
+
+.deposit li.line {
+    border-top: 1px dashed #dcdcdc;
+    padding-top: 20px;
+}
+
+.deposit label {
+    width: 115px;
+    font-weight: 700;
+    display: inline-block;
+    float: left;
+}
+
+.deposit .detail {
+    margin-left: 115px;
+    padding-top: 5px;
+}
+
+.deposit .detail span {
+    padding-left: 20px;
+    margin-right: 15px;
+}
+
+.deposit .detail span.wx {
+    background: url('/static/images/weixin.png') no-repeat 0 0;
+}
+
+.deposit .detail span.ali {
+    background: url('/static/images/ali.png') no-repeat 0 0;
+}
+
+.deposit .detail span.pos {
+    background: url('/static/images/pos.png') no-repeat 0 0;
+}
+
+/* 添加银行卡 */
+.bank-edit {
+    margin: 20px 0 0 40px;
+}
+
+.bank-edit label {
+    width: 60px;
+    display: inline-block;
+    padding-left: 30px;
+    font-size: 13px;
+}
+
+.bank-edit input.text {
+    width: 320px;
+    height: 30px;
+    padding-left: 5px;
+}
+
+.bank-edit input.submit {
+    margin: 20px 0 0 90px;
+}
+
+.bank-edit .exp {
+    color: #4070a0;
+    padding: 6px 0 6px 90px;
+    margin-top: 0px;
+}
+
+.bank-edit li {
+    margin-top: 10px;
+}
+
+.bank-edit .total {
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.bank-edit .total span {
+    margin-left: 30px;
+}
+
+.bank-edit p {
+    margin-bottom: 15px;
+}
+
+.bank-edit p.tip {
+    color: #e95730;
+    font-size: 13px;
+}
+
+/* flow */
+.flow {
+    width: 100%;
+    overflow: auto;
+}
+
+/* mobile banner */
+.mobile-banner {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    margin-left: -290px;
+    _position: absolute;
+    _bottom: auto;
+    _top: expression(eval(document.documentElement.scrollTop + document.documentElement.clientHeight - this.offsetHeight - (parseInt(this.currentStyle.marginTop, 10) || 0) - (parseInt(this.currentStyle.marginBottom, 10) || 0)));
+}
+
+.mobile-banner i {
+    position: absolute;
+    width: 23px;
+    height: 23px;
+    top: 16px;
+    right: 22px;
+    cursor: pointer;
+}
+
+.mobile-banner .qrcode {
+    position: absolute;
+    left: 28px;
+    top: 7px;
+}
+
+/* 统计 */
+.stat {
+    padding: 20px 17px;
+    border-top: 1px solid #eee;
+}
+
+.stat h2 {
+    font-size: 16px;
+    padding-bottom: 12px;
+}
+
+.yesterday-today .no-data {
+    margin-bottom: 40px;
+}
+
+.yesterday-today .map {
+    width: 900px;
+    height: 260px;
+    margin: auto;
+    text-align: center;
+    font-size: 20px;
+}
+
+.yesterday-today ul {
+    font-size: 14px;
+    border-bottom: 1px solid #dcdcdc;
+    margin-bottom: 40px;
+}
+
+.yesterday-today ul li {
+    padding: 10px 0;
+    border-top: 1px dashed #dcdcdc;
+}
+
+.yesterday-today ul em {
+    width: 300px;
+    display: inline-block;
+}
+
+.today-revenue .map, .today-payment .map {
+    width: 900px;
+    height: 500px;
+    margin: auto;
+    text-align: center;
+    font-size: 20px;
+}
+
+.container {
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    background: #eee;
+    height: 100%;
+    min-height: 700px;
+}
+
+.container h2 {
+    padding-top: 100px;
+    color: #505050;
+    font-weight: 600;
+    font-size: 40px;
+}
+
+.container h3 {
+    margin-top: .16rem;
+    font-weight: 400;
+    color: #505050;
+    font-size: 33px;
+}
+
+.container .item {
+    margin: 20px auto;
+    width: 450px;
+    text-align: left;
+    display: none;
+    font-size: 20px;
+    position: relative;
+}
+
+.container .pointOutWord {
+    text-align: left;
+    margin: 20px auto 0;
+    width: 450px;
+    font-size: 20px;
+}
+.container .item li {
+    background: white;
+    width: 100%;
+    height: 90px;
+    margin-top: 1px;
+    line-height: 90px;
+    margin: 1px auto;
+    text-align: left;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.change .item .change {
+    text-align: center;
+}
+.container .pointOutWord,
+.container .item .identify_code_send,
+.container .item li .submit {
+    color: #f60;
+}
+
+.container .identify_code_resend {
+    display: none;
+}
+
+.container .item p {
+    display: none;
+}
+
+.container .item .mistake_identify_code {
+    margin-bottom: 0.02rem;
+}
+
+.container .item ul {
+    text-align: center;
+}
+
+.container .item li label {
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.container .item .button {
+    text-align: center;
+}
+
+.container .item li input {
+    border: 0;
+    font-size: 20px;
+    outline: 0;
+    height: 100%;
+}
+
+.container .item .identify_code_box {
+    position: absolute;
+    width: 150px;
+    top: 50%;
+    right: 10px;
+    text-align: center;
+    z-index: 10;
+    *margin-top: -40px;
+}
+
+.container .identify_code_resend,
+.identify_code_send {
+    display: inline-block;
+    width: 150px;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    margin-top: -45px;
+    *margin-top: 0px;
+}
+
+.container .identify_code_resend {
+    color: #aaa;
+    display: none;
+}
+
+.container .item li:nth-child(3) {
+    text-align: center;
+    padding: 0;
+}
+
+.container .item li .submit {
+    font-size: 30px;
+    font-weight: 100;
+    border: 0;
+    background: white;
+    font-weight: 600;
+    outline: 0;
+}
+
+.container .forget_password {
+    color: #aaa;
+    height: 1rem;
+    margin: 20px auto;
+    width: 450px;
+}
+
+.container .login #forget_password {
+    float: right;
+    *margin-top: -20px;
+}
+
+.container .item .forget_password span {
+    display: inline-block;
+}
+
+.container .login .forget_password span:first-child {
+    margin-top: -3px;
+}
+
+.container .login .forget_password span:nth-child(2) {
+    text-align: right;
+}
+
+.container .login .forget_password span .remember_pwd {
+    position: relative;
+    width: 14px;
+    height: 14px;
+    background: #eee;
+    top: -3px;
+}
+
+.container .new_password li input {
+    left: 5%;
+    width: 95%;
+    outline: 0;
+    margin-left: 30px;
+    height: 90px;
+    line-height: 90px;
+}
+.container .new_password li:nth-child(4) {
+    text-align: center;
+    padding: 0;
+}
+.container .new_password li .prompt {
+    height: 100%;
+    background: #eee;
+}
+
+.container .new_for_ie {
+    padding: 0;
+    text-align: left;
+    color: #8c8c8c;
+}
+
+.footer {
+    margin-top: -100px;
+    width: 100%;
+    text-align: center;
+    color: #8c8c8c;
+    font-size: 28px;
+}
+
+.container .active {
+    display: block;
+}
+input::-ms-clear { display: none;}
+input::-ms-reveal { display: none;}

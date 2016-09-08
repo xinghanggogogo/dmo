@@ -1,0 +1,147 @@
+
+header{
+	font-size: .28rem;
+	float: left;
+	border-bottom: 1px solid #DCDCDC;
+	padding-bottom: 10px;
+}
+
+header>p{
+	padding: .24rem;
+}
+
+.nowMoney{
+	font-size: .72rem;
+	font-weight: 700;
+	display: inherit;
+	padding: .36rem 0 .56rem .24rem;
+}
+
+.compare{
+	float: left;
+	width: 100%;
+}
+
+.compare p{
+	display: inherit;
+	float: left;
+	width: 33.33%;
+}
+
+.compare p:first-child{
+    text-indent: .24rem;
+}
+
+.compare p i{
+	display: inline-block;
+	margin-left: 5px;
+}
+
+.down{
+	color: #32b16c;
+}
+
+.up{
+	color: #e62b00;
+}
+
+.down+i{
+	width: 9px;
+	height: 12px;
+	background: url('/static/images/down.png');
+	background-size: 100% 100%;
+}
+
+.up+i{
+	width: 9px;
+	height: 12px;
+	background: url('/static/images/up.png');
+	background-size: 100% 100%;
+}
+
+.rose{
+	display: inline-block;
+	padding: 0;
+	width: 93%;
+	margin: .24rem;
+	padding-top: .24rem;
+	border-top: 1px dotted #DCDCDC;
+}
+
+article{
+	float: left;
+	width: 100%;
+}
+
+/*chart*/
+.charts{
+	text-align: center;
+	padding: .3rem 0;
+	border-bottom: 1px solid #DCDCDC;
+}
+
+.charts .time{
+	font-size: .3rem;
+	margin-bottom: .16rem;
+}
+
+.charts .totalMoney{
+	font-size: .2rem;
+	margin-bottom: .1rem;
+}
+
+.charts .date{
+	font-size: .14rem;
+}
+
+
+.chart{
+	min-width: 100%;
+	height: 400px;
+}
+
+.pieChart{
+	border-bottom: 1px solid #DCDCDC;
+}
+
+.pieChart>p,.ringChart>p{
+	font-size: .28rem;
+	padding: .24rem;
+}
+
+.ringChart{
+	margin-bottom: 1.5rem;
+    float: left;
+}
+
+.ringList{
+	font-size: .26rem;
+	text-align: center;
+	line-height: 16;
+}
+
+.circliful{
+    position: relative;
+    float: left;
+    margin-bottom: 1.6rem;
+    width: .8rem;
+	height: .8rem;
+}
+.circle-text, .circle-info, .circle-text-half, .circle-info-half {
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    display: inline-block;
+}
+.circle-info, .circle-info-half {
+    color: #000;
+}
+.circliful .fa {
+    margin: -10px 3px 0 3px;
+    position: relative;
+    bottom: 4px;
+}
+
+.circliful canvas{
+	border-radius: 50%;
+}

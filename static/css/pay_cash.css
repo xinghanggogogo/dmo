@@ -1,0 +1,468 @@
+
+header{
+	background-color: #ff6600;
+	font-size: .28rem;
+	color: #fff;
+}
+
+.masking{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	background-color: rgba(0,0,0,0.3);
+	display: none;
+	z-index: 7;
+}
+
+.naTitle{
+	padding: .48rem .36rem;
+}
+
+.balance{
+	display: inline-block;
+	font-size: .72rem;
+	font-weight: 700;
+	padding: 0 0 .48rem .36rem;
+}
+
+.note{
+	padding: .24rem .36rem;
+	background-color: #e65100;
+}
+
+.note p{
+	display: inline-block;
+}
+
+.seeNote{
+	float: right;
+}
+
+.seeNote:after{
+	content: '';
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	background: url('/static/images/arrow.png');
+	background-size: 100% 100%;
+	position: relative;
+	top: .05rem;
+	left: .05rem;
+}
+
+.meals{
+	font-size: .24rem;
+	float: left;
+	width: 100%;
+	border-bottom: 1px solid rgba(220,220,220,.5);
+}
+
+.meals>p{
+	font-size: .28rem;
+	padding: .24rem;
+}
+
+.meals ul{
+	float: left;
+	width: 100%;
+}
+
+.meals li{
+	float: left;
+	text-align: center;
+	width: 28%;
+	border-radius: 6px;
+	margin-left: 3.5%;
+	border: 1px solid rgba(220,220,220,.5);
+	margin-bottom: 4%;
+	color: #969696;
+	background-color: #F3F3F3
+}
+
+.meals li:hover .money{
+	color: #656565;
+}
+
+.mealInfo{
+	margin-top: .36rem;
+	border-radius: 3px 3px 0 0;
+}
+
+.mealInfo .time{
+	font-size: .36rem;
+	margin-bottom: .1rem;
+}
+
+.mealInfo .discount{
+	padding-bottom: .36rem;
+	display:none;
+}
+
+.meals li .money{
+	padding: .12rem 0;
+	background-color: #ffffff;
+	color: #969696;
+	border-radius: 0 0 5px 5px;
+}
+
+.meals .click{
+	border: 1px solid #FF6600;
+	color: #FFFFFF;
+	background-color: #FF6600;
+}
+
+
+.cashInfo{
+	font-size: .26rem;
+	float: left;
+	width: 100%;
+	text-align: center;
+	border-bottom: 1px solid rgba(220,220,220,.5);
+}
+
+.cashInfo>div{
+	width: 30%;
+	float: left;
+    text-align: left;
+    margin-top: .52rem;
+}
+
+#cashMoney{
+    font-size: .34rem;
+    margin-bottom: .22rem;
+    display: inline-block;
+    font-weight: 700;
+}
+
+.cashInfo>div:first-child{
+	position: relative;
+	left: .24rem;
+	font-size: .28rem;
+}
+
+.cashInfo>div:nth-child(2){
+	width: 70%;
+}
+
+.xgtc{
+	display: none;
+	margin-top: .16rem;
+	color: #FF6600;
+	font-size: 0.28rem;
+}
+
+.xgtc .tc{
+	color: #000;
+	margin-left: .14rem;
+}
+
+.confirm .xgtc{
+	margin-bottom: .1rem;
+	font-size: .34rem;
+}
+
+.confirm .mealMoney{
+	margin-right: 10px;
+}
+
+.cashMoeny{
+	font-size: .34rem;
+	display: inline-block;
+	font-weight: 700;
+}
+
+#wx,#ali,#pos{
+	padding: 0px 5px;
+}
+
+#wx:before,#ali:before,#pos:before{
+    content: '';
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    position: relative;
+    top: 3px;
+    left: -4px;
+    border-radius: 3px;
+}
+
+#wx:before{
+    background: url('/static/images/weixin.png');
+    background-size: 100% 100%;
+}
+
+#ali:before{
+    background: url('/static/images/ali.png');
+    background-size: 100% 100%;
+}
+
+#pos:before{
+    background: url('/static/images/pos.png');
+    background-size: 100% 100%;
+}
+
+
+.btn{
+	background-color: #DCDCDC;
+	border: none;
+	color: #FFFFFF;
+	border-radius: 6px;
+	width: 40%;
+	padding: .25rem 0;
+	font-size: .3rem;
+	margin-top: .64rem;
+	margin-bottom: .56rem;
+}
+
+.isbtn{
+	background-color: #ff6600;
+}
+
+.ruleBtn{
+	font-size: .24rem;
+	color: #787878;
+	border-bottom: 1px solid #787878;
+	display: table;
+	margin-bottom: .2rem;
+    margin-left: 30%;
+}
+
+#cashInfo{
+	float: left;
+	width: 100%;
+	font-size: .28rem;
+	margin-bottom: 1.2rem;
+}
+
+#cashInfo>p{
+	padding: .24rem;
+}
+
+.accountInfo{
+	color: #464646;
+	font-size: .24rem;
+	padding-left: .24rem;
+}
+
+.accountInfo>p{
+	margin-bottom: .08rem;
+}
+
+.alter{
+	font-size: .24rem;
+	color: #f66219;
+}
+
+#bankInfo{
+	text-align: center;
+}
+
+#bankInfo>p{
+	font-size: .26rem;
+	color: #f66219;
+	padding: .24rem;
+	text-align: left;
+}
+
+.bankInfo{
+	font-size: .3rem;
+	text-align: left;
+}
+
+.bankInfo>p{
+	margin-bottom: .2rem;
+}
+
+.bankInfo input{
+	border: 1px solid #bfbfbf;
+	width: 65%;
+	height: .7rem;
+	text-indent: .1rem;
+	font-size: .3rem;
+}
+
+.bankInfo .name{
+	width: 25%;
+	margin-left: 5%;
+    display: inline-block;
+}
+
+.bankInfo>span{
+	color: #1362cd;
+	display: inline-block;
+	margin-left: 30%;
+	font-size: .24rem;
+	margin-bottom: .2rem;
+}
+
+#bankBtn{
+	margin-bottom: 2rem;
+}
+
+/*bankInfo*/
+.confirm{
+	font-size: .34rem;
+	position: fixed;
+	top: 30%;
+	text-align: center;
+	width: 80%;
+	z-index: 9;
+	background-color: #FFFFFF;
+	left: 10%;
+	border: 1px solid #f66219;
+	padding: 35px 0 0 0;
+	display: none;
+}
+
+.isTrue{
+	border-top: 1px solid rgba(220,220,220,.5);
+	margin-top: 35px;
+	float: left;
+    width: 100%;
+    padding-bottom: 4px;
+}
+
+.isTrue>span{
+	display: inline-block;
+	width: 49%;
+    float: left;
+    position: relative;
+    top: 2px;
+    padding: 20px 0;
+}
+
+.isTrue>span:first-child{
+	border-right: 1px solid rgba(220,220,220,.5);
+}
+
+/*cash notes*/
+.cashNotes{
+	display: block;
+	font-size: .26rem;
+	display: none;
+	margin-bottom: 1.5rem;
+}
+
+.noNote{
+    display:none;
+    text-align:center;
+}
+
+.cashNotes>p{
+	font-size: .3rem;
+	padding: .24rem;
+	border-bottom: 1px solid rgba(220,220,220,.5);
+}
+
+.cashNotes>p>span{
+	font-size: .22rem;
+}
+
+.dealMoney{
+	font-size: .4rem;
+	font-weight: 700;
+}
+
+.cashState li{
+	padding: .24rem;
+	position: relative;
+	border-bottom: 1px solid rgba(220,220,220,.5);
+}
+
+.cashState li p{
+	padding-top: 5px;
+}
+
+.cashState li .state{
+	float: right;
+    position: absolute;
+    right: .24rem;
+    top: .3rem;
+}
+
+.dealTrue{
+	color: #f66219;
+}
+
+.data{
+	display: none;
+}
+
+/*detail*/
+.detail{
+	position: fixed;
+	width: 70%;
+	left: 15%;
+	top: 20%;
+	border: 1px solid #F66219;
+	background-color: #FFFFFF;
+	display: none;
+	z-index: 8;
+}
+
+.ds{
+	text-align: center;
+	margin: .34rem 0 .1rem 0;
+	font-size: .22rem;
+}
+
+.ds .dealMoney{
+	font-size: .54rem;
+	margin-bottom: .1rem;
+    display: inherit;
+}
+
+.des{
+	margin: .2rem;
+	border-top: 1px dotted #DCDCDC;
+}
+
+.des>p{
+	margin-top: 10px;
+	font-size: .26rem;
+}
+
+.wx:before,.ali:before,.pos:before{
+	content: '';
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	position: relative;
+    top: 3px;
+    margin-left: 4px;
+    left: -4px;
+}
+
+.wx:before{
+	background: url('/static/images/weixin.png');
+	background-size: 100% 100%;	
+}
+
+.ali:before{
+	background: url('/static/images/ali.png');
+	background-size: 100% 100%;
+}
+
+.pos:before{
+	background: url('/static/images/pos.png');
+	background-size: 100% 100%;
+}
+
+.modul{
+	position: fixed;
+    top: 50%;
+    font-size: .3rem;
+    background-color: rgba(0,0,0,0.6);
+    padding: 15px 20px;
+    color: #FFFFFF;
+    text-align: center;
+    border-radius: 4px;
+    display: none;
+}
+
+#phone{
+	border-bottom: 1px solid #33aaff;
+	color: #33AAFF;
+	margin-left: 6px;
+}

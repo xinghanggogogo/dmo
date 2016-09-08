@@ -1,0 +1,262 @@
+.clear:after {
+	display: block;
+	height: 0;
+	content: "";
+	clear: both
+}
+
+html,
+body {
+	width: 100%;
+}
+
+header {
+	font-size: .3rem;
+	padding: .2rem .25rem;
+	padding-right: 0.5rem;
+	color: #5d5d5d;
+	border-bottom: 1px solid #dcdcdc;
+	overflow: hidden;
+	position: fixed;
+	z-index: 11;
+	width: 100%;
+	background: white;
+	box-sizing: border-box;
+}
+
+header span span {
+	font-size: .24rem
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+	color: #ff8c58;
+}
+
+.container {
+	overflow-x: hidden;
+	padding-top: 0.8rem;
+	margin-bottom: 1rem;
+}
+
+.mask {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.3);
+	z-index: 10;
+	display: none;
+}
+
+.container .box {
+	padding: .25rem .25rem;
+	border-bottom: 1px solid #dcdcdc;
+}
+
+.container .box .money {
+	font-size: .40rem;
+	margin-bottom: .3rem;
+}
+
+.box .no_money {
+	text-align: center;
+	margin-bottom: .3rem;
+	font-size: 0.28rem;
+}
+
+.container .box p {
+	font-size: .24rem;
+	margin-bottom: .1rem;
+}
+
+.container .no_more_date {
+	display: none;
+}
+
+.container .no_more_date h2 {
+	text-align: center;
+	font-size: .28rem;
+}
+
+.choose_details {
+	width: 100%;
+	position: fixed;
+	left: 0;
+	z-index: 10;
+	display: none;
+}
+
+.choose_dif {
+	position: absolute;
+	top: 0.06rem;
+	width: 100%;
+	display: none;
+}
+
+.choose_dif .content {
+	background: white;
+	padding-left: 0.65rem;
+	box-sizing: border-box;
+	margin-top: -0.1rem;
+	padding-top: 0.1rem;
+}
+
+.choose_dif section {
+	padding: .2rem 0;
+}
+
+.choose_dif section ul li {
+	float: left;
+	width: 25%;
+	height: .7rem;
+	text-align: center;
+	line-height: .7rem;
+	font-size: .28rem;
+	background: #eeeeee;
+	border-radius: 3px;
+	margin-right: 6%;
+}
+
+.choose_dif .calender {
+	color: #656565;
+	height: 4rem;
+	overflow: hidden;
+}
+
+.choose_dif .calender p {
+	height: .65rem;
+	line-height: .65rem;
+	clear: both;
+}
+
+.choose_dif .calender p input {
+	height: .65rem;
+	width: 70%;
+	float: right;
+	margin-right: 13%;
+	background: #eeeeee;
+	border: 0;
+	text-indent: 15px;
+}
+
+.choose_dif .calender div {
+	text-align: center;
+	margin-left: -0.65rem;
+}
+
+.choose_dif .calender div button {
+	background: #ff6600;
+	color: white;
+	border: 0;
+	width: 1.52rem;
+	height: .7rem;
+	margin-top: 1rem;
+	border-radius: 5px;
+	font-size: .28rem;
+}
+
+.calender p {
+	font-size: .28rem;
+	margin-bottom: .25rem;
+	overflow: hidden;
+}
+
+.calender #date,
+#date2 {
+	width: 65%;
+	height: .6rem;
+	background: #eeeeee;
+	border-radius: 3px;
+	border: 0;
+	font-size: .26rem;
+}
+
+.details {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: none;
+	overflow: hidden;
+	z-index: 11;
+	min-height: 12rem;
+}
+
+.details .details_con {
+	position: fixed;
+	top: 1.5rem;
+	width: 5.5rem;
+	left: 50%;
+	margin-left: -3rem;
+	border: 2px solid #ff6600;
+	border-radius: 3px;
+	background: white;
+	padding: 0 .27rem;
+	height: 7rem;
+	overflow-y: scroll;
+}
+
+.details_con h2 {
+	margin-top: .6rem;
+	text-align: center;
+	font-size: .54rem;
+}
+
+.details_con h2~p {
+	text-align: center;
+	padding: .27rem 0 .40rem 0;
+	font-size: .22rem;
+	border-bottom: 1px dotted #dcdcdc;
+}
+
+.details_con .status p {
+	font-size: .26rem;
+	margin: .23rem;
+}
+
+.details_con .status p:first-child {
+	margin-top: .35rem;
+}
+
+.details_con .status {
+	border-bottom: 1px dotted #dcdcdc;
+}
+
+.details_con .order p {
+	font-size: .20rem;
+	color: #858585;
+	margin: .2rem
+}
+
+.details_con .order p:last-child {
+	margin-bottom: .5rem;
+}
+
+.details_con .order .goods {
+	float: right;
+	width: 73%;
+	margin: -0.45rem 0 .5rem 0;
+	font-size: .20rem;
+	color: #858585;
+}
+
+
+/*导航条*/
+
+.choose_dif section ul .active {
+	background: #ff6600;
+	color: white;
+}
+
+.active_word {
+	color: #ff6600
+}
+
+.active_grey {
+	background: rgba(0, 0, 0, 0.3);
+}
