@@ -127,3 +127,17 @@ class APIModel(object):
     def get_ktv_ser_order(self, tradeno):
         return self.slave.query(ServiceInfo).filter_by(id=tradeno).scalar()
 
+    @models_to_list
+    def get_ktv_list(self, page=1, page_size=20, ktv_id=None, ktv_name=None, dogname=None):
+        offset = (page - 1) * page_size
+        q = self.slave.query(KtvStore).filter_by(state=1)
+        print (ktv_name)
+        if ktv_id:
+            q = q.filter(KtvStore.store_id == ktv_id)
+        if ktv_name:
+            q = q.filter(KtvStore.name.like('%'+ktv_name+'%'))
+        if dogname:
+            q = q.filter(KtvStore.name.like('%'+dogname+'%'))
+        return q.offset(offset).limit(page_size).all()
+
+
